@@ -24,9 +24,47 @@
                         Loop tal (alltså vart loopen ska sluta)
                         Första divisionstal (det som ska ersättas med Bish)
                         Andra divisionstal (det som ska ersättas med Bosh)-->
+                <div class="container">
+                    <h2>Basic form</h2>            
+                    <form>
+                        <div class="mb-2">
+                            <label for="emailInput" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="emailInput">
+                        </div>
+                        <div class="mb-3">
+                            <label for="passwordInput" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="passwordInput">
+                        </div>
+                        <div class="mb-3">
+                            <input type="checkbox" class="form-check-input" id="rememberMeCheck">
+                            <label class="form-check-label" for="rememberMeCheck">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Log in</button>
+                    </form>
+                    <h2>Grid-based form</h2>
+                    <form class="needs-validation" action="result.html" method="get">
+                        <div class="row">
+                            <div class="col">
+                                <label for="loopTal" class="form-label">Loop tal</label>
+                                <input type="text" class="form-control form-control-lg" placeholder="Positivt heltal" id="loopTal" value="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="divisionstal1" class="form-label">Första divisionstal</label>
+                                <input type="text" class="form-control" placeholder="Positivt heltal" id="divisionstal1" value="">
+                            </div>
+                            <div class="col">
+                                <label for="divisionstal2" class="form-label">Andra divisionstal</label>
+                                <input type="text" class="form-control" placeholder="Positivt heltal" id="divisionstal2" value="">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-3">Lista tal</button>
+                    </form>
+                </div>
             </div>
             <div>
-                <!--En presentation av talen-->
+                <!--En presentation av talen?????-->
             </div>
             <footer>
                 &copy; Christer Törnqvist
