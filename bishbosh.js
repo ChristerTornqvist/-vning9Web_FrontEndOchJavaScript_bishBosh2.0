@@ -24,31 +24,35 @@ const btn = document.querySelector('#listButton');
 const getResult = function(){
 // console.log('Inne i rätt metod')
 
+
 let bish = divisionstal1.value;
 let bosh = divisionstal2.value;
 let loop = loopTal.value;
 // console.log(bish, bosh, loop);
 
 printResult.innerHTML =  `<h2>Presentation av resultat</h2>`;
+if (bish > 0 && bosh > 0)
+{
+  for (let i = 1; i <= loop; i++)
+  {
+      if (i % (bish * bosh) == 0) console.log('bish-bosh'), printResult.innerHTML +=  `Bish-Bosh, `;
+      
+      else if (i % bish == 0) console.log('bish'), printResult.innerHTML +=  `Bish, `;
+      else if (i % bosh == 0) console.log('bosh'), printResult.innerHTML +=  `Bosh, `;
+      
+      else console.log(i), printResult.innerHTML +=  `${i}, `;
+      // printResult.innerHTML +=  `<p>${i}</p>`
+      // <ul>
+      // <li>${i}</li>
+      // <li>2</li>
+      // <li>3</li>
+      // </ul>
+      
+      // `
+  }
+  }
+}
 
-for (let i = 1; i <= loop; i++)
-        {
-            if (i % (bish * bosh) == 0) console.log('bish-bosh'), printResult.innerHTML +=  `Bish-Bosh, `;
-            
-            else if (i % bish == 0) console.log('bish'), printResult.innerHTML +=  `Bish, `;
-            else if (i % bosh == 0) console.log('bosh'), printResult.innerHTML +=  `Bosh, `;
-            
-            else console.log(i), printResult.innerHTML +=  `${i}, `;
-            // printResult.innerHTML +=  `<p>${i}</p>`
-            // <ul>
-            // <li>${i}</li>
-            // <li>2</li>
-            // <li>3</li>
-            // </ul>
-            
-            // `
-        }
-};
 
 // const changeText = () => textToChange.innerText = 'Hej hopp';
 btn.addEventListener('click', getResult);

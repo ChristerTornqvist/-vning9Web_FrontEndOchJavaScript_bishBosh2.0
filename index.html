@@ -31,10 +31,10 @@
                     <form class="needs-validation" id="inputForm" action="#result" method="get" novalidate>
                         <div class="row">
                             <div class="col">
-                                <label for="loopTal" class="form-label">Looptal</label>
-                                <input type="number" min="0" max="1000" id="loopTal" class="form-control form-control-lg" placeholder="Positivt heltal" value="" required>
+                                <label for="loopTal" class="form-label">Looptal (max fyra siffror)</label>
+                                <input type="number" min="0" max="9999" id="loopTal" class="form-control form-control-lg" placeholder="Positivt heltal" value="" required>
                                 <div class="invalid-feedback">
-                                    Maxvärde krävs!
+                                    Värde för looptal krävs!
                                 </div>
                             </div>
                         </div>
@@ -59,8 +59,8 @@
                 </div>
             </div>
             <div>
-                <a name="result"></a>
-                <!--En presentation av talen?????-->
+                <!--En presentation av talen-->
+                <!-- <a name="result"></a> -->
                 <div id="printResult"></div>
 
                 <!-- <h4>Utfyllnadstext</h4>
