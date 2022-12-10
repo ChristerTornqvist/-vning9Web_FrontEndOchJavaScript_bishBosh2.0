@@ -32,7 +32,7 @@ const getResult = function()
   {
     for (let i = 1; i <= loop; i++)
     {
-      if (i % (bish * bosh) == 0) console.log('bish-bosh'), printResult.innerHTML +=  `Bish-Bosh, `;
+      if (i % bish == 0 && i % bosh == 0) console.log('bish-bosh'), printResult.innerHTML +=  `Bish-Bosh, `;
       else if (i % bish == 0) console.log('bish'), printResult.innerHTML +=  `Bish, `;
       else if (i % bosh == 0) console.log('bosh'), printResult.innerHTML +=  `Bosh, `;
       else console.log(i), printResult.innerHTML +=  `${i}, `;
