@@ -12,22 +12,19 @@
     <body>
         <article>
             <header>
-                <h1>Bish-Bosh 2.0</h1>
-                <p></p>
+                <br><h1>Bish-Bosh 2.0</h1>
+                <p>Bish-Bosh listar alla tal mellan 1 och ett tal du väljer (Looptal), med vissa undantag: Om talet är jämnt delbart med ett av divisionstalen du bestämmer listas "Bish" respektive "Bosh" istället för talet. Om talet är jämnt delbart med båda divisionstalen skrivs "Bish-Bosh" istället för talet.</p>
+                <div class="example">
+                    <p>Positiva heltal krävs i samtliga fall för att det ska fungera.</p>
+                </div>
+                <p>Sidan är skapad som en del i en .NET-utbildning, med syfte att träna på JavaScript och tillämpning av frontend-funktionalitet.</p><br>
             </header>
             <div>
-                <p>Bish-Bosh listar alla tal mellan 1 och ett tal du väljer (Looptal), med vissa undantag: Om talet är jämnt delbart med ett av divisionstalen du bestämmer listas "Bish" respektive "Bosh" istället för talet. Om talet är jämnt delbart med båda divisionstalen skrivs "Bish-Bosh" istället för talet.</p>
-                <p>Positiva heltal krävs i samtliga fall för att det ska fungera.</p>
-                <p>Sidan är skapad som en del i en .NET-utbildning, med syfte att träna på JavaScript och tillämpning av frontend-funktionalitet.</p>
                 <h5>Exemplel med looptal 20 och divisionstalen 3 och 4:</h5>
                 <p>1, 2, bish, bosh, 5, bish, 7, bosh, bish, 10, 11, bish-bosh, 13, 14, bish, bosh, 17, bish, 19, bosh</p>
             </div>
             <div>
-                <!--Inputfält för variabler:
-                        Loop tal (alltså vart loopen ska sluta)
-                        Första divisionstal (det som ska ersättas med Bish)
-                        Andra divisionstal (det som ska ersättas med Bosh)-->
-                <div class="container"><h2 id="gridHeadline">Skriv in siffror här:</h2>
+                <div class="container"><h2 id="gridHeadline">Skriv in siffror här</h2>
                     <form class="needs-validation" id="inputForm" action="#result" method="get" novalidate>
                         <div class="row">
                             <div class="col">
@@ -41,36 +38,30 @@
                         <div class="row">
                             <div class="col">
                                 <label for="divisionstal1" class="form-label">Första divisionstalet</label>
-                                <input type="text" id="divisionstal1" class="form-control" placeholder="Positivt heltal" value="" required>
+                                <input type="number" id="divisionstal1" class="form-control" placeholder="Positivt heltal" value="" required>
                                 <div class="invalid-feedback">
                                     Divisionstal nödvändigt!
                                 </div>
                             </div>
                             <div class="col">
                                 <label for="divisionstal2" class="form-label">Andra divisionstalet</label>
-                                <input type="text" id="divisionstal2" class="form-control" placeholder="Positivt heltal" value="" required>
+                                <input type="number" id="divisionstal2" class="form-control" placeholder="Positivt heltal" value="" required>
                                 <div class="invalid-feedback">
                                     Divisionstal nödvändigt!
                                 </div>
                             </div>
                         </div>
-                        <button type="submit" id="listButton" class="btn btn-primary mt-3">Lista tal</button>
+                        <button type="submit" id="listButton" class="btn btn-primary mt-3">Presentera resultat</button>
                     </form>
                 </div>
             </div>
             <div>
-                <!--En presentation av talen-->
-                <!-- <a name="result"></a> -->
-                <div id="printResult"></div>
-
-                <!-- <h4>Utfyllnadstext</h4>
-                <p>Träutensilierna i ett tryckeri äro ingalunda en oviktig faktor, för trevnadens, ordningens och ekonomiens upprätthållande, och dock är det icke sällan som sorgliga erfarenheter göras på grund af det oförstånd med hvilket kaster, formbräden och regaler tillverkas och försäljas Kaster som äro dåligt hopkomna och af otillräckligt. Träutensilierna i ett tryckeri äro ingalunda en oviktig faktor, för trevnadens, ordningens och ekonomiens upprätthållande, och dock är det icke sällan som sorgliga erfarenheter göras på grund af det oförstånd med hvilket kaster, formbräden och regaler tillverkas och försäljas Kaster som äro dåligt hopkomna och af otillräckligt. Träutensilierna i ett tryckeri äro ingalunda en oviktig faktor, för trevnadens, ordningens och ekonomiens upprätthållande, och dock är det icke sällan som sorgliga erfarenheter göras på grund af det oförstånd med hvilket kaster, formbräden och regaler tillverkas och försäljas Kaster som äro dåligt hopkomna och af otillräckligt. Träutensilierna i ett tryckeri äro ingalunda en oviktig faktor, för trevnadens, ordningens och ekonomiens upprätthållande, och dock är det icke sällan som sorgliga erfarenheter göras på grund af det oförstånd med hvilket kaster, formbräden och regaler tillverkas och försäljas Kaster som äro dåligt hopkomna och af otillräckligt. Träutensilierna i ett tryckeri äro ingalunda en oviktig faktor, för trevnadens, ordningens och ekonomiens upprätthållande, och dock är det icke sällan som sorgliga erfarenheter göras på grund af det oförstånd med hvilket kaster, formbräden och regaler tillverkas och försäljas Kaster som äro dåligt hopkomna och af otillräckligt.</p> -->
+                <div class="result" id="printResult"></div>
             </div>
             <footer>
-                &copy; Christer Törnqvist
+                <p>&copy; 2022-12-10<br>Christer Törnqvist</p>
             </footer>
         </article>
-        
         <script src="bishbosh.js"></script>
     </body>
 </html>
