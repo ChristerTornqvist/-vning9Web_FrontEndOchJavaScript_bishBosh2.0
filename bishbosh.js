@@ -5,13 +5,16 @@ const divisionstal2 = document.querySelector('#divisionstal2');
 const printResult = document.querySelector('#printResult');
 const btn = document.querySelector('#listButton');
 
-(function () {
+(function()
+{
   'use strict'
   var forms = document.querySelectorAll('.needs-validation')
-  Array.prototype.slice.call(forms)
-  .forEach(function (form) {
-    form.addEventListener('submit', function (event) {
-      if (!form.checkValidity()) {
+  Array.prototype.slice.call(forms).forEach(function (form)
+  {
+    form.addEventListener('submit', function (event)
+    {
+      if (!form.checkValidity())
+      {
         event.preventDefault()
         event.stopPropagation()
       }
@@ -19,7 +22,8 @@ const btn = document.querySelector('#listButton');
     }, false)
   })
 })()
-const getResult = function(){
+const getResult = function()
+{
   let bish = divisionstal1.value;
   let bosh = divisionstal2.value;
   let loop = loopTal.value;

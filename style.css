@@ -58,6 +58,10 @@ div p {
     margin-top: 3%;
 }
 
+.row input {
+    max-width: 350px;
+}
+
 .form-label {
     font-weight: bolder;
 }
