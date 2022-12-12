@@ -39,7 +39,7 @@ div p {
 
 .container {
     padding-block: 2%;
-    background-image: url('/images/HexFade.png');
+    background-image: url('images/HexFade.png');
     background-repeat: no-repeat;
     background-position: right center;
     background-color:#fdfdfd;
@@ -85,7 +85,7 @@ div p {
 footer {
     height: 70px;
     margin-top: 70px;
-    background-image: url('/images/HexFade.png');
+    background-image: url('images/HexFade.png');
     background-repeat: no-repeat;
     background-position: right center;
     background-color:#fdfdfd;
